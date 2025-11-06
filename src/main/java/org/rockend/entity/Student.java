@@ -2,6 +2,8 @@ package org.rockend.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "studants")
 public class Student {
@@ -28,6 +30,14 @@ public class Student {
     @ManyToOne
     @JoinColumn(name = "group_id")
     private Group group;
+
+    @ManyToMany
+    @JoinTable(
+            name = "students_sections",
+            joinColumns = @JoinColumn(name = "section_id"),
+            inverseJoinColumns = @JoinColumn(name = "student_id")
+    )
+    private List<Section> sections;
 
     public Student() { }
 
