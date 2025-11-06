@@ -34,8 +34,8 @@ public class Student {
     @ManyToMany
     @JoinTable(
             name = "students_sections",
-            joinColumns = @JoinColumn(name = "section_id"),
-            inverseJoinColumns = @JoinColumn(name = "student_id")
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "section_id")
     )
     private List<Section> sections;
 
@@ -109,6 +109,14 @@ public class Student {
 
     public void setGroup(Group group) {
         this.group = group;
+    }
+
+    public List<Section> getSections() {
+        return sections;
+    }
+
+    public void setSections(List<Section> sections) {
+        this.sections = sections;
     }
 
     @Override
