@@ -23,10 +23,14 @@ This is a console Java application where I practiced using the Hibernate ORM
 
 ## 🏗️ Архитектура проекта  
 
-src/
-└── main/
-└── java/
-└── org/
+src/  
+
+└── main/  
+
+└── java/  
+
+└── org/  
+
 └── rockend/
 ├── HibernateExample.java // Главный класс для запуска
 ├── config/
@@ -74,7 +78,7 @@ docker run --name postgres-container \
 Клонируйте репозиторий:
 
 
-git clone https://github.com/<your-username>/HibernatePractice.git
+git clone https://github.com/username14433/HibernatePractice.git
 cd HibernatePractice
 Убедитесь, что контейнер PostgreSQL запущен и доступен.
 
