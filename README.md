@@ -26,22 +26,19 @@ This is a console Java application where I practiced using the Hibernate ORM
 src/  
 
 └── main/  
-
 └── java/  
-
 └── org/  
-
-└── rockend/
-├── HibernateExample.java // Главный класс для запуска
-├── config/
-│ └── HibernateConfig.java // Конфигурация Hibernate и подключение к БД
-└── entity/
-├── Student.java // Сущность студента
-├── Address.java // Сущность адреса
-├── Group.java // Сущность группы
-├── Section.java // Сущность секции (факультатива)
-├── SectionType.java // Перечисление типов секций
-└── FacultyType.java // Перечисление типов факультетов
+└── rockend/  
+├── HibernateExample.java // Главный класс для запуска  
+├── config/  
+│ └── HibernateConfig.java // Конфигурация Hibernate и подключение к БД  
+└── entity/  
+├── Student.java // Сущность студента  
+├── Address.java // Сущность адреса  
+├── Group.java // Сущность группы  
+├── Section.java // Сущность секции (факультатива)  
+├── SectionType.java // Перечисление типов секций  
+└── FacultyType.java // Перечисление типов факультетов  
 
 ---
 
